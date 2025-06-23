@@ -1,5 +1,6 @@
 public class GameMaster {
     public static void main(String[] args) {
+        //Character c = new Character("名無し",50);
         Hero hero = new Hero("アベル",100,"銅の剣");
         Slime slime = new Slime("スライムA",30);
         System.out.println("冒険が始まる…！");
@@ -17,8 +18,8 @@ public class GameMaster {
         hero.attack(slime);
         hero.showStatus();
         slime.showStatus();
-        System.out.println(hero.name + "は生きている:" + hero.isAlive(hero.hp));
-        System.out.println(slime.name + "は生きている:" + slime.isAlive(slime.hp));
+        System.out.println(hero.name + "は生きている:" + hero.isAlive());
+        System.out.println(slime.name + "は生きている:" + slime.isAlive());
         Hero partyMember = hero;
         partyMember.hp -= 50;
         System.out.print("partyMember経由でHPを減らした後:");

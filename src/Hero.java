@@ -14,4 +14,7 @@ public class Hero extends Character{
         System.out.println(name + "は回復呪文を唱えた！HPが20回復した！");
         super.hp += 20;
     }
+    /*public final boolean isAlive(){
+        return this.hp > 0;
+    }*/
 }
